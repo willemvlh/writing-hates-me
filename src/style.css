@@ -1,0 +1,28 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.4rem;
+}
+
+header{
+   margin-bottom: 50px;
+   margin-top: 20px;
+}
+
+header h1{
+   
+}
+
+a{
+   color: black;
+}
+
+header svg{
+   max-height: 80px;
+   
+}
+
+div.post{
+   margin-bottom: 24px;
+}
