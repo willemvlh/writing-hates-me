@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wvl="wvl" version="3.0">
    <xsl:include href="shared.xsl"/>
    <xsl:template name="xsl:initial-template">
-      <xsl:result-document href="../pages/main.html" method="html">
+      <xsl:result-document href="../pages/index.html" method="html">
          <xsl:sequence select="transform(map{
             'stylesheet-location': './main.xsl',
             'initial-template': xs:QName('xsl:initial-template')
