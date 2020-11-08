@@ -9,7 +9,7 @@
    </xsl:function>
    <xsl:template name="css">
       <style>
-         <xsl:sequence select="unparsed-text(resolve-uri('style.css')) => replace('\s', '')"/>   
+         <xsl:sequence select="unparsed-text('https://github.com/willemvlh/writing-hates-me/raw/master/src/style.css') => replace('\s', '')"/> <!--hack-->  
       </style>
    </xsl:template>
 </xsl:stylesheet>
