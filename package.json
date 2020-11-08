@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/transform.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willemvlh/writing-hates-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willemvlh/writing-hates-me/issues"
+  },
+  "homepage": "https://github.com/willemvlh/writing-hates-me#readme",
+  "dependencies": {
+    "saxon-js": "^2.0.2",
+    "xslt3": "^2.0.2"
+  }
+}

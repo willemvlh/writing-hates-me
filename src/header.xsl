@@ -3,7 +3,7 @@
    <xsl:template name="header">
       <header>
          <div>
-            <a href="main.html"><xsl:call-template name="strawberry"/></a>   
+            <a href="index.html"><xsl:call-template name="strawberry"/></a>   
          </div>
       </header>
    </xsl:template>

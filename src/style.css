@@ -5,24 +5,24 @@ body {
   line-height: 1.4rem;
 }
 
-header{
-   margin-bottom: 50px;
-   margin-top: 20px;
+header {
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
-header h1{
-   
+header h1 {
+  font-size: 120%;
 }
 
-a{
-   color: black;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-header svg{
-   max-height: 80px;
-   
+header svg {
+  max-height: 80px;
 }
 
-div.post{
-   margin-bottom: 24px;
+div.post {
+  margin-bottom: 24px;
 }

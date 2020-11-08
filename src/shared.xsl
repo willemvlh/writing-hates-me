@@ -1,4 +1,4 @@
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0" xmlns:wvl="wvl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xsl:stylesheet exclude-result-prefixes="#all" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0" xmlns:wvl="wvl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
    <xsl:function name="wvl:compute-url" as="xs:string">
       <xsl:param name="post" as="element(post)"/>
       <xsl:sequence select="tokenize($post/title => lower-case(), ' ') => string-join('-') || '-' || $post/date || '.html'"/>
@@ -7,4 +7,9 @@
       <xsl:param name="date" as="xs:date"/>
       <xsl:sequence select="format-date($date, '[D01] [Mn] [Y]')"/>
    </xsl:function>
+   <xsl:template name="css">
+      <style>
+         <xsl:sequence select="unparsed-text(resolve-uri('style.css')) => replace('\s', '')"/>   
+      </style>
+   </xsl:template>
 </xsl:stylesheet>
