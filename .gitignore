@@ -1,4 +1,5 @@
 pages/
+*.sef
 
 # Logs
 logs

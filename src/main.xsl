@@ -7,7 +7,10 @@
    <xsl:template name="xsl:initial-template">
       <html>
          <head>
-            <xsl:call-template name="css"/>
+             <style>
+
+         <xsl:sequence select="unparsed-text(('src/style.css')) => replace('\s', '')"/> <!--hack-->  
+      </style>
             <title>Aardbei</title>
          </head>
          <body>

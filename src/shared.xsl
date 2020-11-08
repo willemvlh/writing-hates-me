@@ -7,9 +7,4 @@
       <xsl:param name="date" as="xs:date"/>
       <xsl:sequence select="format-date($date, '[D01] [Mn] [Y]')"/>
    </xsl:function>
-   <xsl:template name="css">
-      <style>
-         <xsl:sequence select="unparsed-text('https://github.com/willemvlh/writing-hates-me/raw/master/src/style.css') => replace('\s', '')"/> <!--hack-->  
-      </style>
-   </xsl:template>
 </xsl:stylesheet>

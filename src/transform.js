@@ -21,6 +21,7 @@ async function writePosts() {
     let main = SaxonJS.transform({
         stylesheetLocation: path.join(__dirname, "main.sef"),
         collectionFinder: _ => resolved,
+        stylesheetBaseURI: url.pathToFileURL(__dirname),
         destination: "serialized",
     })
 
@@ -31,6 +32,7 @@ async function writePosts() {
         SaxonJS.transform({
             stylesheetLocation: path.join(__dirname, "post.sef"),
             sourceLocation: url.pathToFileURL(fn),
+            stylesheetBaseURI: url.pathToFileURL(__dirname),
             deliverResultDocument: uri => {
                 return { destination: "file", save: (a, b, c) => fs.writeFileSync("./pages/" + uri, (b[0].value), { encoding: c }) }
             }

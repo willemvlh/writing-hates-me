@@ -8,7 +8,9 @@
       <xsl:result-document href="{wvl:compute-url(.)}">
          <html>
             <head>
-               <xsl:call-template name="css"/>
+               <style>
+         <xsl:sequence select="unparsed-text(('src/style.css')) => replace('\s', '')"/> <!--hack-->  
+      </style>
                <title>{title}</title>
             </head>
             <body>
