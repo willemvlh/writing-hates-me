@@ -9,7 +9,7 @@
          <head>
              <style>
 
-         <xsl:sequence select="unparsed-text(('src/style.css')) => replace('\s', '')"/> <!--hack-->  
+         <xsl:sequence select="unparsed-text(('src/style.css')) => normalize-space() => replace('\r|\n', '')"/>  
       </style>
             <title>Aardbei</title>
          </head>
