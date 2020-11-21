@@ -12,8 +12,7 @@ header {
 }
 
 header h1 {
-  font-size: 120%;
-  text-decoration: underline aqua;
+  text-decoration: underline 5px aqua;
 }
 
 a {
